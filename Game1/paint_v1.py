@@ -1,4 +1,6 @@
+from math import sqrt
 from turtle import *
+import turtle as T
 from freegames import vector
 
 def line(start, end):
@@ -25,8 +27,15 @@ def square(start, end):
 
 def circle(start, end):
     "Draw circle from start to end."
-    circle(5,)
-    pass  # TODO
+    up()
+    goto(start.x, start.y)
+    radius = sqrt((start.x-end.x)*(start.x-end.x)+(start.y-end.y)*(start.y-end.y))
+    goto(start.x,start.y-radius)
+    down()
+    begin_fill()
+    T.circle(radius)
+    end_fill()
+    
 
 def rectangle(start, end):
     "Draw rectangle from start to end."
