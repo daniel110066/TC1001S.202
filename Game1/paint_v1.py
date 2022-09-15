@@ -14,15 +14,18 @@ def square(start, end):
     goto(start.x, start.y)
     down()
     begin_fill()
-
+    signX=(end.x - start.x)/abs(end.x - start.x)
+    signY=(end.y - start.y)/abs(end.y - start.y)
+    
     for count in range(4):
-        forward(end.x - start.x)
-        left(90)
+        forward((end.x - start.x))
+        left((signX/signY)*(90))
 
     end_fill()
 
 def circle(start, end):
     "Draw circle from start to end."
+    circle(5,)
     pass  # TODO
 
 def rectangle(start, end):
