@@ -1,0 +1,18 @@
+commit 1745251d0d9b45a580cec54337053fd82014e591
+Author: coolestKitten <emmanuel@Catcomputer.local>
+Date:   Fri Sep 16 15:57:10 2022 -0500
+
+    in game 2, both the snake and the food will be a different colors each time the game starts. the colors will never be the same
+
+commit 29ee21ded634c3069de3a2dca4b72e83cb059152
+Author: Daniel Hidalgo <hidalgobadillodaniel@gmail.com>
+Date:   Thu Sep 15 04:27:02 2022 -0500
+
+    add food one step random movement
+
+commit 1314e9832000718c27eb4e54012f4b88f0d0165c
+Author: Daniel Hidalgo <hidalgobadillodaniel@gmail.com>
+Date:   Tue Sep 13 10:45:56 2022 -0500
+
+    add game2(snake) original
+(END)
