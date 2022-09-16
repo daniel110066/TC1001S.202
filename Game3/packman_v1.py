@@ -6,12 +6,12 @@ state = {'score': 0}
 path = Turtle(visible=False)
 writer = Turtle(visible=False)
 aim = vector(5, 0)
-pacman = vector(-40, -80)
+pacman = vector(-40, 0)
 ghosts = [
-    [vector(-180, 160), vector(5, 0)],
-    [vector(-180, -160), vector(0, 5)],
-    [vector(100, 160), vector(0, -5)],
-    [vector(100, -160), vector(-5, 0)],
+    [vector(-160, -180), vector(5, 0)],
+    [vector(-160, 160), vector(0, 5)],
+    [vector(80, 160), vector(0, -5)],
+    [vector(80, -180), vector(-5, 0)],
 ]
 # map1    
 #tiles = [
@@ -180,6 +180,7 @@ onkey(lambda: change(-5, 0), 'Left')
 onkey(lambda: change(0, 5), 'Up')
 onkey(lambda: change(0, -5), 'Down')
 world()
-#move()
+
+move()
 
 done()
