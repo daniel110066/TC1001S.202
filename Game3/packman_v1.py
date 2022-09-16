@@ -5,13 +5,13 @@ from freegames import floor, vector
 state = {'score': 0}
 path = Turtle(visible=False)
 writer = Turtle(visible=False)
-aim = vector(5, 0)
+aim = vector(8, 0)
 pacman = vector(-40, 0)
 ghosts = [
-    [vector(-160, -180), vector(5, 0)],
-    [vector(-160, 160), vector(0, 5)],
-    [vector(80, 160), vector(0, -5)],
-    [vector(80, -180), vector(-5, 0)],
+    [vector(-160, -180), vector(10, 0)],
+    [vector(-160, 160), vector(0, 10)],
+    [vector(80, 160), vector(0, -10)],
+    [vector(80, -180), vector(-10, 0)],
 ]
 # map1    
 #tiles = [
@@ -142,10 +142,10 @@ def move():
             point.move(course)
         else:
             options = [
-                vector(5, 0),
-                vector(-5, 0),
-                vector(0, 5),
-                vector(0, -5),
+                vector(10, 0),
+                vector(-10, 0),
+                vector(0, 10),
+                vector(0, -10),
             ]
             plan = choice(options)
             while not valid(point+plan):
@@ -163,7 +163,7 @@ def move():
         if abs(pacman - point) < 20:
             return
 
-    ontimer(move, 100)
+    ontimer(move, 40)
 
 def change(x, y):
     "Change pacman aim if valid."
@@ -178,10 +178,10 @@ writer.goto(160, 160)
 writer.color('white')
 writer.write(state['score'])
 listen()
-onkey(lambda: change(5, 0), 'Right')
-onkey(lambda: change(-5, 0), 'Left')
-onkey(lambda: change(0, 5), 'Up')
-onkey(lambda: change(0, -5), 'Down')
+onkey(lambda: change(8, 0), 'Right')
+onkey(lambda: change(-8, 0), 'Left')
+onkey(lambda: change(0, 8), 'Up')
+onkey(lambda: change(0, -8), 'Down')
 world()
 
 move()
