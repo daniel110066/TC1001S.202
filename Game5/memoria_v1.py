@@ -83,8 +83,9 @@ def draw():
             x, y = xy(count) ## find the coordinate of the tile
             square(x, y) ## place a square over it
 
-
+    up()
     goto(0, 200)
+    down()
     color('black')
     write("Tiles found : " + str(foundtiles), font=('Arial', 14, 'normal'), align = 'center')
     goto(-140, 200)
