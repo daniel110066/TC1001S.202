@@ -1,0 +1,36 @@
+commit d8074b4c7d58c9888909659a7af5aede8aa17f0b
+Author: coolestKitten <emmanuel@Catcomputer.local>
+Date:   Fri Sep 16 15:35:29 2022 -0500
+
+    on game 3, both the player and the ghosts move faster. game framerate increased
+
+commit 7fe4728f3b3b7b06543531076bef4e7eb5e3365b
+Author: Daniel Hidalgo <hidalgobadillodaniel@gmail.com>
+Date:   Fri Sep 16 01:20:20 2022 -0500
+
+    improve the movement of the ghosts by making them allways move in a valid course
+
+commit bfe48d1582d856354a916302c4830ccd2eb2c16a
+Author: Daniel Hidalgo <hidalgobadillodaniel@gmail.com>
+Date:   Fri Sep 16 00:09:38 2022 -0500
+
+    rearrenge pacman and ghosts pisition in packman_v1.py
+
+commit e619863974b1deef53e14116e76871cea5d0a3fb
+Author: Daniel Hidalgo <hidalgobadillodaniel@gmail.com>
+Date:   Thu Sep 15 22:11:17 2022 -0500
+
+    add a modified map to packman_v1.py
+
+commit f217dca13bbcb9de32057c3058eeed17f0f90340
+Author: Daniel Hidalgo <hidalgobadillodaniel@gmail.com>
+Date:   Thu Sep 15 16:33:59 2022 -0500
+
+    new file packman_v1.py
+
+commit da08bd5e572becc58574dfa94cf5b86277ec33c4
+Author: Daniel Hidalgo <hidalgobadillodaniel@gmail.com>
+Date:   Tue Sep 13 10:50:33 2022 -0500
+
+    add Game3(Packman) original
+(END)
