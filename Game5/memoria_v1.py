@@ -88,7 +88,9 @@ def draw():
     down()
     color('black')
     write("Tiles found : " + str(foundtiles), font=('Arial', 14, 'normal'), align = 'center')
+    up()
     goto(-140, 200)
+    down()
     color('black')
     write("Total clicks : " + str(globalclicks), font=('Arial', 14, 'normal'), align = 'center')
 
@@ -98,9 +100,9 @@ def draw():
         x, y = xy(mark) ## get the location of the mark
         up()
         ## this line determines the position the numbers will appear in
-        goto(x + 27, y + 1.5)
+        goto(x + 26, y + 10)
         color('black')
-        write(tiles[mark], font=('Arial', 30, 'normal'), align = 'center')
+        write(tiles[mark], font=('Arial', 15, 'normal'), align = 'center')
         
 
     if foundtiles == 64:
