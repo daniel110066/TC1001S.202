@@ -6,6 +6,7 @@ from freegames import vector
 ball = vector(-200, -200)
 speed = vector(0, 0)
 targets = []
+score = vector(0,0)
 
 def tap(x, y):
     "Respond to screen tap."
@@ -60,6 +61,12 @@ def move():
     for target in dupe:
         if abs(target - ball) > 13:
             targets.append(target)
+        else:
+            score.x += 1
+            title("Score: "+str(score.x))
+        
+            
+            
 
     draw()
 

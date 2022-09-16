@@ -3,6 +3,7 @@ from secrets import choice
 from turtle import *
 from freegames import vector
 
+score = 0
 ball = vector(-200, -200)
 speed = vector(0, 0)
 targets = []
