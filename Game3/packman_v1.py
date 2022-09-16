@@ -137,6 +137,7 @@ def move():
     dot(20, 'yellow')
 
     for point, course in ghosts:
+        print(point,course)
         if valid(point + course):
             point.move(course)
         else:
@@ -147,9 +148,11 @@ def move():
                 vector(0, -5),
             ]
             plan = choice(options)
+            while not valid(point+plan):
+                plan = choice(options)
             course.x = plan.x
             course.y = plan.y
-
+            point.move(course)
         up()
         goto(point.x + 10, point.y + 10)
         dot(20, 'red')
