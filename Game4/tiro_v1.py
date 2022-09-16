@@ -13,8 +13,9 @@ def tap(x, y):
     if not inside(ball):
         ball.x = -199
         ball.y = -199
-        speed.x = (x + 200) / 25
-        speed.y = (y + 200) / 25
+        ## these numbers control the speed of the red ball
+        speed.x = (x + 200) / 13
+        speed.y = (y + 200) / 13
 
 def inside(xy):
     "Return True if xy within screen."
@@ -48,8 +49,10 @@ def move():
         target = vector(200, y)
         targets.append(target)
 
+    ## this for statements controls the speed of the blue balls
+    ## should be no higher than 3
     for target in targets:
-        target.x -= 0.5
+        target.x -= 2.5
 
     if inside(ball):
         speed.y -= 0.35

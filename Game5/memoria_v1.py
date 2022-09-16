@@ -16,6 +16,11 @@ tiles = [
     ] * 2
 state = {'mark': None}
 hide = [True] * 64
+##tiles = list(range(32)) * 2
+state = {'mark': None}
+hide = [True] * 64
+foundtiles = 0
+globalclicks = 0
 
 def square(x, y):
     "Draw white square with black outline at (x, y)."
@@ -44,38 +49,69 @@ def tap(x, y):
 
     if mark is None or mark == spot or tiles[mark] != tiles[spot]:
         state['mark'] = spot
+    global foundtiles
+    global globalclicks
+
+    globalclicks += 1
+
+    if mark is None or mark == spot or tiles[mark] != tiles[spot]:
+        state['mark'] = spot     
     else:
         hide[spot] = False
         hide[mark] = False
         state['mark'] = None
+        foundtiles += 2
+
+
+
+        
 
 def draw():
     "Draw image and tiles."
-    clear()
-    goto(0, 0)
+    clear() ## clears the screen
+    goto(0, 0) ## places the car at the center of the screen
     shape(car)
-    stamp()
+    stamp()   
+    global foundtiles
+    global globalclicks
 
+
+    ## draws the squares if they are hidden
+    ## for every number from 0 to 64
     for count in range(64):
-        if hide[count]:
-            x, y = xy(count)
-            square(x, y)
+        if hide[count]: ## if the itle is hidden
+            x, y = xy(count) ## find the coordinate of the tile
+            square(x, y) ## place a square over it
 
-    mark = state['mark']
 
-    if mark is not None and hide[mark]:
-        x, y = xy(mark)
+    goto(0, 200)
+    color('black')
+    write("Tiles found : " + str(foundtiles), font=('Arial', 14, 'normal'), align = 'center')
+    goto(-140, 200)
+    color('black')
+    write("Total clicks : " + str(globalclicks), font=('Arial', 14, 'normal'), align = 'center')
+
+    mark = state['mark'] ## defines the state for a marked tile
+
+    if mark is not None and hide[mark]: ## if the tile is marked and hidden
+        x, y = xy(mark) ## get the location of the mark
         up()
-        goto(x + 2, y)
+        ## this line determines the position the numbers will appear in
+        goto(x + 27, y + 1.5)
         color('black')
-        write(tiles[mark], font=('Arial', 15, 'normal'))
-        print(tiles[mark],mark)
+        write(tiles[mark], font=('Arial', 30, 'normal'), align = 'center')
+        
 
-    update()
-    ontimer(draw, 100)
+    if foundtiles == 64:
+        goto(0, 0)
+        color('green')
+        write("WINNER", font=('Arial', 30, 'normal'), align = 'center')   
+
+    update() ## updates the screen
+    ontimer(draw, 100) ## recursive method that calls draw every 100 ms
 
 shuffle(tiles)
-setup(420, 420, 370, 0)
+setup(420, 500, 370, 0)
 addshape(car)
 hideturtle()
 tracer(False)
