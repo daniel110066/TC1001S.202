@@ -1,0 +1,43 @@
+commit 7addc8768734796bbde11596fe6ecb4aba5ec731 (HEAD -> main)
+Author: Daniel Hidalgo <hidalgobadillodaniel@gmail.com>
+Date:   Fri Sep 16 18:50:35 2022 -0500
+
+    add history of commitments Game3
+
+commit b778e52b100315fcf48f2b5ee4f13efec1f6eada
+Merge: c5ddda0 fb780a8
+Author: coolestKitten <emmanuel@Catcomputer.local>
+Date:   Fri Sep 16 14:10:19 2022 -0500
+
+    merged main branch with emmanuel
+
+commit bf493fe8eebfdb43b6b4716b0d07e3617ed2e57a
+Author: Daniel Hidalgo <hidalgobadillodaniel@gmail.com>
+Date:   Fri Sep 16 12:08:49 2022 -0500
+
+    add infinite loop to tiro_v1.py by repositioning the targets when they get outscreen
+
+commit 560479db5d4f9542934dae92b52969a70a144059
+Author: Daniel Hidalgo <hidalgobadillodaniel@gmail.com>
+Date:   Fri Sep 16 02:50:36 2022 -0500
+
+    add a score to tiro_v1.py
+
+commit c07147e910c3d9f11a3a786b1b891bdb40a45558
+Author: Daniel Hidalgo <hidalgobadillodaniel@gmail.com>
+Date:   Fri Sep 16 02:05:18 2022 -0500
+
+    add rainbow colors to the targets in tiro_v1.py
+
+commit 98e4824e7067bbc2b3883342e32282e86da63032
+Author: coolestKitten <sepcaro2@gmail.com>
+Date:   Wed Sep 14 19:50:38 2022 -0500
+
+    projectiles and enemies in game four move faster. enemies reaching the end of the screen no longer crashes the game
+
+commit 60bde302fb87349a092cfaf71503d76ed0119ec8
+Author: coolestKitten <emmanuel@Catcomputer.local>
+Date:   Tue Sep 13 10:16:15 2022 -0500
+
+    se agregaron los archivos para el juego de memoria y el juego de tiro parabolico
+(END)
