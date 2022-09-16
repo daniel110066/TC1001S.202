@@ -42,35 +42,24 @@ def rectangle(start, end):
     up()
     goto(start.x, start.y)
     down()
-    signX=(end.x - start.x)/abs(end.x - start.x)
-    signY=(end.y - start.y)/abs(end.y - start.y)
-
-    for count in range(4):
-
-        if count % 2 == 0:
-            forward((end.x - start.x)*2)
-            left((signX/signY)*(90))
-        else:
-            forward((end.x - start.x))
-            left((signX/signY)*(90))
-
+    begin_fill()
+    goto(end.x, start.y)
+    goto(end.x, end.y)
+    goto(start.x,end.y)
+    goto(start.x, start.y)
     end_fill()
-    pass  # TODO
 
 def triangle(start, end):
     "Draw triangle from start to end."
     up()
     goto(start.x, start.y)
     down()
-    signX=(end.x - start.x)/abs(end.x - start.x)
-    signY=(end.y - start.y)/abs(end.y - start.y)
-
-    for count in range(3):
-        forward((end.x - start.x))
-        right((signX/signY)*(120))
-
+    begin_fill()
+    goto(start.x + (end.x - start.x)*2, start.y)
+    goto(end.x, end.y)
+    goto(start.x, start.y)
     end_fill()
-    pass  # TODO
+    
 
 def tap(x, y):
     "Store starting point or draw shape."
