@@ -1,0 +1,41 @@
+commit 07b99de1a8487816a6a93ede014209a68f8a6a86 (HEAD -> main, origin/main, origin/HEAD, origin/Daniel, Daniel)
+Author: Daniel Hidalgo <hidalgobadillodaniel@gmail.com>
+Date:   Fri Sep 16 18:00:11 2022 -0500
+
+    modify rectangle and triangle tool in paint_v1.py
+
+commit 4bdd62e40f07b7fbc23b0f72e490e6e2843bc0e5
+Author: coolestKitten <emmanuel@Catcomputer.local>
+Date:   Fri Sep 16 16:41:20 2022 -0500
+
+    in game 1, triangles and rectangles are now available with the keys 't' and 'r'
+
+commit d8074b4c7d58c9888909659a7af5aede8aa17f0b
+Author: coolestKitten <emmanuel@Catcomputer.local>
+Date:   Fri Sep 16 15:35:29 2022 -0500
+
+    on game 3, both the player and the ghosts move faster. game framerate increased
+
+commit a170c15a57d567890d57e142810918b8bad69e4f
+Author: Daniel Hidalgo <hidalgobadillodaniel@gmail.com>
+Date:   Thu Sep 15 03:19:59 2022 -0500
+
+    Add circle tool
+
+commit c2fb5f3117b2acf46531d789fddecacce5f1a63d
+Author: Daniel Hidalgo <hidalgobadillodaniel@gmail.com>
+Date:   Thu Sep 15 00:10:48 2022 -0500
+
+    improve square drawing pattern
+
+commit e61ddd7cfed18f8797e65c82a47245b24d019bbd
+Author: Daniel Hidalgo <hidalgobadillodaniel@gmail.com>
+Date:   Wed Sep 14 20:46:40 2022 -0500
+
+    Add a new color(YELLOW) to paint_v1.py
+
+commit f04939c1760019400178645a3ec3466495c5d776
+Author: Daniel Hidalgo <hidalgobadillodaniel@gmail.com>
+Date:   Tue Sep 13 10:17:50 2022 -0500
+
+    add game1(paint) original
