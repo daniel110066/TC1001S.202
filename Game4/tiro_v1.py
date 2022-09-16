@@ -72,7 +72,7 @@ def move():
 
     for target in targets:
         if not inside(target):
-            return
+            target = vector(200,randrange(-150,150))
 
     ontimer(move, 50)
 
