@@ -1,15 +1,29 @@
 from turtle import *
 from random import randrange
+from random import choice
 from freegames import square, vector
 
 food = vector(0, 0)
 snake = [vector(10, 0)]
 aim = vector(0, -10)
+colors = ['green', 'blue', 'yellow', 'black', 'purple']
+colorSnek = 'black'
+colorFood = 'green'
+
 
 def change(x, y):
     "Change snake direction."
     aim.x = x
     aim.y = y
+
+def randColor():
+    global colorSnek 
+    global colorFood
+    colorSnek = choice(colors)
+    colorFood = choice(colors)
+    if colorFood == colorSnek:
+        randColor()
+    
 
 def inside(head):
     "Return True if head inside boundaries."
@@ -19,6 +33,8 @@ def move():
     "Move snake forward one segment."
     head = snake[-1].copy()
     head.move(aim)
+    global colorFood
+    global colorSnek
 
     if not inside(head) or head in snake:
         square(head.x, head.y, 9, 'red')
@@ -49,12 +65,13 @@ def move():
     clear()
 
     for body in snake:
-        square(body.x, body.y, 9, 'black')
+        square(body.x, body.y, 9, colorSnek)
 
-    square(food.x, food.y, 9, 'green')
+    square(food.x, food.y, 9, colorFood)
     update()
     ontimer(move, 100)
 
+randColor()
 setup(420, 420, 370, 0)
 hideturtle()
 tracer(False)
