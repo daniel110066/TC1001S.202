@@ -22,10 +22,17 @@ def inside(xy):
 def draw():
     "Draw ball and targets."
     clear()
+    
+    colors = [
+        'blue',
+        'green',
+        'pink',
+        'purple',
+    ]
 
     for target in targets:
         goto(target.x, target.y)
-        dot(20, 'blue')
+        dot(20, choice(colors))
 
     if inside(ball):
         goto(ball.x, ball.y)
