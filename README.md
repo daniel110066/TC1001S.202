@@ -1,5 +1,5 @@
 # Practica de git
-
+![](https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png)
 ## TC1001S.202
 HC: Arte de la programación
 
@@ -15,4 +15,4 @@ Modificar juegos de forma colaborativa
 - Los commits se hacen en inglés 
 - En cada carpeta hay un archivo history.txt con el historial de commits relacionado a esa carpeta
 ## Video
-<>
+<https://youtu.be/uoYLaUbyGaA>
