@@ -1,0 +1,55 @@
+commit 7addc8768734796bbde11596fe6ecb4aba5ec731
+Author: Daniel Hidalgo <hidalgobadillodaniel@gmail.com>
+Date:   Fri Sep 16 18:50:35 2022 -0500
+
+    add history of commitments Game3
+
+commit ac9e37c215c3a5237dbbafc655ace8cafb95a19d
+Author: Daniel Hidalgo <hidalgobadillodaniel@gmail.com>
+Date:   Fri Sep 16 17:33:09 2022 -0500
+
+    resize written tile in memoria_v1.py
+
+commit 789630824275da69bfa8cc047c190833b740b028
+Author: Daniel Hidalgo <hidalgobadillodaniel@gmail.com>
+Date:   Fri Sep 16 17:27:27 2022 -0500
+
+    up down while write tiles found and clicks in memoria_v1.py
+
+commit b778e52b100315fcf48f2b5ee4f13efec1f6eada
+Merge: c5ddda0 fb780a8
+Author: coolestKitten <emmanuel@Catcomputer.local>
+Date:   Fri Sep 16 14:10:19 2022 -0500
+
+    merged main branch with emmanuel
+
+commit c5ddda0cdc0a8d87f5249267fa25a87f8d02460e
+Author: Daniel Hidalgo <hidalgobadillodaniel@gmail.com>
+Date:   Fri Sep 16 12:46:40 2022 -0500
+
+    change name memoria_v0.py to momoris_v1.py
+
+commit 6ace6f4230ce9833d14950e8618f5153881709ed
+Author: Daniel Hidalgo <hidalgobadillodaniel@gmail.com>
+Date:   Fri Sep 16 12:44:57 2022 -0500
+
+    replace numbers with 4 letter words to increase the difficulty in memoria_v1.py
+
+commit fb780a83e6d3765eee90c7461f4a9038a1e34a3d (origin/emmanuel)
+Author: coolestKitten <sepcaro2@gmail.com>
+Date:   Wed Sep 14 23:37:56 2022 -0500
+
+    in game 4, global click count and found tiles are displayed at the top of the screen. when all tiles are found, a message will appear on the screen. numbers are centered on their respective tiles
+
+commit 98e4824e7067bbc2b3883342e32282e86da63032
+Author: coolestKitten <sepcaro2@gmail.com>
+Date:   Wed Sep 14 19:50:38 2022 -0500
+
+    projectiles and enemies in game four move faster. enemies reaching the end of the screen no longer crashes the game
+
+commit 60bde302fb87349a092cfaf71503d76ed0119ec8
+Author: coolestKitten <emmanuel@Catcomputer.local>
+Date:   Tue Sep 13 10:16:15 2022 -0500
+
+    se agregaron los archivos para el juego de memoria y el juego de tiro parabolico
+(END)
