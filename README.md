@@ -2,8 +2,8 @@
 HC: Arte de la programación
 
 # Integrantes 
-Daniel Hidalgo - A01423393
-Emmanuel Prieto - A01423341
+-Daniel Hidalgo - A01423393
+-Emmanuel Prieto - A01423341
 
 # Descripción 
 Modificar juegos de forma colaborativa
