@@ -1,15 +1,18 @@
-# TC1001S.202
+# Practica de git
+
+## TC1001S.202
 HC: Arte de la programación
 
-# Integrantes 
--Daniel Hidalgo - A01423393
--Emmanuel Prieto - A01423341
+## Integrantes 
+Daniel Hidalgo - A01423393
 
-# Descripción 
+Emmanuel Prieto - A01423341
+
+## Descripción 
 Modificar juegos de forma colaborativa
 - A cada juego le corresponde una carpeta
 - Cada uno trabaja en su rama
 - Los commits se hacen en inglés 
 - En cada carpeta hay un archivo history.txt con el historial de commits relacionado a esa carpeta
-# Video
-link()
+## Video
+<>
